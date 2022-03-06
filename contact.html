@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images/plant.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Garden | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/plant.png" />
     <style>
-        * {
-  box-sizing: border-box;
-  font-family:'Dancing Script', cursive;
-  font-weight: bold;
-}
+      * {
+        box-sizing: border-box;
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+      }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
 
-input[type=submit] {
-  color: white;
-  background-color:  #215013;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-transition: all 0.3s ease 0s;
-}
+      input[type="submit"] {
+        color: white;
+        background-color: #215013;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        transition: all 0.3s ease 0s;
+      }
 
-input[type=submit]:hover {
-  background-color: #215013;
-  transform: translateY(4px);
-  box-shadow: 0px 3px 10px hsl(0, 0%, 48%);
-}
+      input[type="submit"]:hover {
+        background-color: #215013;
+        transform: translateY(4px);
+        box-shadow: 0px 3px 10px hsl(0, 0%, 48%);
+      }
 
-.container {
-  border-radius: 5px;
-  background-color: #d5f0cd;
-  padding: 20px;
-  width: 60%;
-  margin-top: 5%;
-  margin-left: 20%;
-  margin-bottom: 5%;
-}
+      .container {
+        border-radius: 5px;
+        background-color: #d5f0cd;
+        padding: 20px;
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 20%;
+        margin-bottom: 5%;
+      }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25,
+        .col-75,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
     </style>
-</head>
-<body>
-   <header class="main-header">
+  </head>
+  <body>
+    <header class="main-header">
       <nav class="main-nav nav">
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -95,37 +99,51 @@ input[type=submit]:hover {
       <h1 class="band-name band-name-large">Dream Garden</h1>
     </header>
 
-<div class="container">
-  <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="phone"># Number</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your Phone Number.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="phone"># Number</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your Phone Number..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Subject</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>
-    
-</body>
+  </body>
 </html>
